@@ -1,0 +1,154 @@
+.Home {
+    padding: 0;
+    padding: 0;
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.Home__container {
+  position: relative;
+    background-image: radial-gradient(
+      farthest-corner at 40px 40px,
+      #afafaf9f 60%,
+      #afafaf9f 100%
+    );
+    min-height: calc(100vh - 60px);
+    margin: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.168);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 540px) {
+  .Home{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.NavBar__container{
+  margin-top: -45px;
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  background-color: #343232;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 45px;
+  border-bottom: 1px solid black ;
+}
+
+.NavBar__container--icon{
+  margin: 0 1em;
+  padding: .1em;
+  padding-right: 1em;
+  
+  height: 60px;
+}
+
+.NavBar__container--home{
+  border-left: 1px solid #ffffff;
+  text-decoration: none;
+  font-style: none;
+  color: white;
+  padding: 0 1em;
+}
+
+.Carrinho__container{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  width: 86%;
+}
+
+.Carrinho__container p, i{
+  margin-left: .7em;
+
+}
+
+.Carrinho__container i{
+  background-color: rgb(51, 255, 0);
+  color: black;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  margin-right: 1.5em;
+  
+}
+
+
+
+
+.Header__container__01 #desconto{
+  background: #413bf6f4;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 45px;
+}
+
+h1 {
+  font-size: 3.3rem;
+  text-align: center;
+  background-color: white;
+  color: #000000;
+  font-weight: 550;
+  align-content: center;
+  margin: .4em 0;
+}  
+
+.Header__container__02 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url("../assets/img/banner.png");
+  max-width: 100vw;
+  background-position-x: center;
+  color: white;
+  height: 222px;
+  
+}
+
+.Header__container__02--efectFrase {
+  font-size: 1.6rem;
+  margin: 1em 0 0 1em;
+  
+}
+
+.Header__container__02--headerDescription{
+  max-width: 40em;
+  margin: 1em 0 0 2em;
+}
+
+
+
+
+/* .footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4em;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  weight: 100vw;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+} */
