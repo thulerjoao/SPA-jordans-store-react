@@ -1,10 +1,4 @@
-.JordanLista {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap; 
-  }
-
-  .cards{
+.cards{
     align-items: center;
     margin: 2em 0;
     display: flex;
@@ -69,6 +63,11 @@
     justify-content: center;
     padding-top: 1em;
   }
+
+  .JordanListaItem__acoes {
+    display: flex;
+    justify-content: space-between;
+  }
   
   .Acoes__adicionar,
   .Acoes__remover {
@@ -101,4 +100,11 @@
     justify-content: center;
   }
 
- 
+  .JordanListaItem__badge{
+    text-align: center;
+    background-color: rgb(51, 255, 0);
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: -25px;
+    z-index: 50;
+  }

@@ -1,0 +1,34 @@
+.Home {
+    padding: 0;
+    padding: 0;
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.Home__container {
+  position: relative;
+    background-image: radial-gradient(
+      farthest-corner at 40px 40px,
+      #afafaf9f 60%,
+      #afafaf9f 100%
+    );
+    min-height: calc(100vh - 60px);
+    margin: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.168);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 540px) {
+  .Home{
+    margin: 0;
+    padding: 0;
+  }
+}
+
