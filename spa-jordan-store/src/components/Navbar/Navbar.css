@@ -16,10 +16,7 @@
   }
   
   .NavBar__container--icon{
-    margin: 0 1em;
-    padding: .1em;
-    padding-right: 1em;
-    
+    margin: 0 .5em;
     height: 60px;
   }
   
@@ -54,8 +51,50 @@
     
   }
   
-  
-  
+  .Opcoes_jordan{
+    border: none;
+    border-left: 1px solid #ffffff;
+    text-decoration: none;
+    font-style: none;
+    font-size: 1.08rem;
+    color: white;
+    background-color: #343232;
+    padding: 0 1em;
+    cursor: pointer;
+    text-decoration-line: none;
+    font-weight: 500;
+  }
+
+  .Jordan{
+    border: none;
+    border-left: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-style: none;
+    font-size: 1.08rem;
+    color: white;
+    background-color: #343232;
+    padding: 0 1em;
+    cursor: pointer;
+    text-decoration-line: none;
+    font-weight: 500;
+  }
+
+
+  .Jordan--ativo{
+    background-color: blue;
+    border: none;
+    color: #ffffff;
+    border: none;
+    border-left: 1px solid #ffffff;
+    text-decoration: none;
+    font-style: none;
+    font-size: 1.08rem;
+    color: white;
+    padding: 0 1em;
+    cursor: pointer;
+    text-decoration-line: none;
+    font-weight: 500;
+  }
   
   .Header__container__01 #desconto{
     background: #413bf6f4;
@@ -92,10 +131,12 @@
   .Header__container__02--efectFrase {
     font-size: 1.6rem;
     margin: 1em 0 0 1em;
+    text-shadow: 1px 1px 2px black;
     
   }
   
   .Header__container__02--headerDescription{
     max-width: 40em;
     margin: 1em 0 0 2em;
+    text-shadow: 1px 1px 2px black;
   }

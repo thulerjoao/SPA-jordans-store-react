@@ -1,0 +1,67 @@
+.AdicionaJordanModal {
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 500px;
+    display: flex;
+    position: relative;
+    transform: translateY(-10px);
+  }
+  
+  .AdicionaJordanModal form div {
+    display: flex;
+    margin: 15px 0;
+  }
+  
+  .AdicionaJordanModal form {
+    width: 100%;
+  }
+  
+  .AdicionaJordanModal div input {
+    border: none;
+    background: rgba(255, 255, 255, 0.90);
+    width: 100%;
+    margin-left: 15px;
+    border-radius: 5px;
+    height: 20px;
+    padding: 2px 10px;
+  }
+  
+  .AdicionaJordanModal__text {
+    font-size: 1em;
+    line-height: 100%;
+  }
+  
+  .AdicionaJordanModal__foto-label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.701);
+    border-radius: 5px;
+    color: darkviolet;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .AdicionaJordanModal__foto {
+    display: none;
+  }
+  
+  .AdicionaJordanModal__enviar {
+    background-color: darkviolet;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+  }
+  
+  .AdicionaJordanModal__enviar:disabled {
+    background-color: #8a8a8a;
+    border: solid black 1px
+  }
+
+  h2{
+    text-align: center;
+    margin: 1em;
+  }
