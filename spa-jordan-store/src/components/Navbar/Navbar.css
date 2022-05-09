@@ -1,142 +1,137 @@
+.NavBar__container {
+  margin-top: -45px;
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  background-color: #343232;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 45px;
+  border-bottom: 1px solid black;
+}
 
-.NavBar__container{
-    margin-top: -45px;
-    position: fixed;
-    z-index: 99;
-    width: 100vw;
-    background-color: #343232;
-    color: white;
-    text-decoration: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 45px;
-    border-bottom: 1px solid black ;
-  }
-  
-  .NavBar__container--icon{
-    margin: 0 .5em;
-    height: 60px;
-  }
-  
-  .NavBar__container--home{
-    border-left: 1px solid #ffffff;
-    text-decoration: none;
-    font-style: none;
-    color: white;
-    padding: 0 1em;
-  }
-  
-  .Carrinho__container{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-items: center;
-    width: 86%;
-  }
-  
-  .Carrinho__container p, i{
-    margin-left: .7em;
-  
-  }
-  
-  .Carrinho__container i{
-    background-color: rgb(51, 255, 0);
-    color: black;
-    width: 2em;
-    display: flex;
-    justify-content: center;
-    margin-right: 1.5em;
-    
-  }
-  
-  .Opcoes_jordan{
-    border: none;
-    border-left: 1px solid #ffffff;
-    text-decoration: none;
-    font-style: none;
-    font-size: 1.08rem;
-    color: white;
-    background-color: #343232;
-    padding: 0 1em;
-    cursor: pointer;
-    text-decoration-line: none;
-    font-weight: 500;
-  }
+.NavBar__container--icon {
+  margin: 0 0.5em;
+  height: 60px;
+}
 
-  .Jordan{
-    border: none;
-    border-left: 1px solid rgb(255, 255, 255);
-    text-decoration: none;
-    font-style: none;
-    font-size: 1.08rem;
-    color: white;
-    background-color: #343232;
-    padding: 0 1em;
-    cursor: pointer;
-    text-decoration-line: none;
-    font-weight: 500;
-  }
+.NavBar__container--home {
+  border-left: 1px solid #ffffff;
+  text-decoration: none;
+  font-style: none;
+  color: white;
+  padding: 0 1em;
+}
 
+.Carrinho__container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  width: 86%;
+}
 
-  .Jordan--ativo{
-    background-color: blue;
-    border: none;
-    color: #ffffff;
-    border: none;
-    border-left: 1px solid #ffffff;
-    text-decoration: none;
-    font-style: none;
-    font-size: 1.08rem;
-    color: white;
-    padding: 0 1em;
-    cursor: pointer;
-    text-decoration-line: none;
-    font-weight: 500;
-  }
-  
-  .Header__container__01 #desconto{
-    background: #413bf6f4;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 0;
-    font-size: 1rem;
-    margin: 0;
-    margin-top: 45px;
-  }
-  
-  h1 {
-    font-size: 3.3rem;
-    text-align: center;
-    background-color: white;
-    color: #000000;
-    font-weight: 550;
-    align-content: center;
-    margin: .4em 0;
-  }  
-  
-  .Header__container__02 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-image: url("assets/img/banner.png");
-    max-width: 100vw;
-    background-position-x: center;
-    color: white;
-    height: 222px;
-    
-  }
-  
-  .Header__container__02--efectFrase {
-    font-size: 1.6rem;
-    margin: 1em 0 0 1em;
-    text-shadow: 1px 1px 2px black;
-    
-  }
-  
-  .Header__container__02--headerDescription{
-    max-width: 40em;
-    margin: 1em 0 0 2em;
-    text-shadow: 1px 1px 2px black;
-  }
+.Carrinho__container p,
+i {
+  margin-left: 0.7em;
+}
+
+.Carrinho__container i {
+  background-color: rgb(51, 255, 0);
+  color: black;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  margin-right: 1.5em;
+}
+
+.Opcoes_jordan {
+  border: none;
+  border-left: 1px solid #ffffff;
+  text-decoration: none;
+  font-style: none;
+  font-size: 1.08rem;
+  color: white;
+  background-color: #343232;
+  padding: 0 1em;
+  cursor: pointer;
+  text-decoration-line: none;
+  font-weight: 500;
+}
+
+.Jordan {
+  border: none;
+  border-left: 1px solid rgb(255, 255, 255);
+  text-decoration: none;
+  font-style: none;
+  font-size: 1.08rem;
+  color: white;
+  background-color: #343232;
+  padding: 0 1em;
+  cursor: pointer;
+  text-decoration-line: none;
+  font-weight: 500;
+}
+
+.Jordan--ativo {
+  background-color: blue;
+  border: none;
+  color: #ffffff;
+  border: none;
+  border-left: 1px solid #ffffff;
+  text-decoration: none;
+  font-style: none;
+  font-size: 1.08rem;
+  color: white;
+  padding: 0 1em;
+  cursor: pointer;
+  text-decoration-line: none;
+  font-weight: 500;
+}
+
+.Header__container__01 #desconto {
+  background: #413bf6f4;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 45px;
+}
+
+h1 {
+  font-size: 3.3rem;
+  text-align: center;
+  background-color: white;
+  color: #000000;
+  font-weight: 550;
+  align-content: center;
+  margin: 0.4em 0;
+}
+
+.Header__container__02 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url("assets/img/banner.png");
+  max-width: 100vw;
+  background-position-x: center;
+  color: white;
+  height: 222px;
+}
+
+.Header__container__02--efectFrase {
+  font-size: 1.6rem;
+  margin: 1em 0 0 1em;
+  text-shadow: 1px 1px 2px black;
+}
+
+.Header__container__02--headerDescription {
+  max-width: 40em;
+  margin: 1em 0 0 2em;
+  text-shadow: 1px 1px 2px black;
+}

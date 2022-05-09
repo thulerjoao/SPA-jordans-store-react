@@ -1,47 +1,45 @@
 .DeletaJordanModal {
-    margin-top: -20px;
-  }
-  
-  .DeletaJordanModal > div {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-  }
+  margin-top: -20px;
+}
 
-  .DeletaJordanModal__fotoModelo{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      border: 2px solid black;
-      background-color: white;
-      
-      
-  }
-  
-  .DeletaJordanModal__foto {
-    width: 100px;
-  }
-  
-  .DeletaJordanModal__confirmar,
-  .DeletaJordanModal__cancelar {
-    border: none;
-    border-radius: 5px;
-    font-family: "Exo", sans-serif;
-    padding: 5px;
-    max-width: 280px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    width: 48%;
-    color: white;
-  }
-  
-  .DeletaJordanModal__confirmar {
-    background-color: darkviolet;
-  }
-  
-  .DeletaJordanModal__cancelar {
-    background-color: red;
-  }
+.DeletaJordanModal > div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.DeletaJordanModal__fotoModelo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.DeletaJordanModal__foto {
+  width: 100px;
+}
+
+.DeletaJordanModal__confirmar,
+.DeletaJordanModal__cancelar {
+  border: none;
+  border-radius: 5px;
+  font-family: "Exo", sans-serif;
+  padding: 5px;
+  max-width: 280px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 48%;
+  color: white;
+}
+
+.DeletaJordanModal__confirmar {
+  background-color: darkviolet;
+}
+
+.DeletaJordanModal__cancelar {
+  background-color: red;
+}

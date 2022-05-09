@@ -1,18 +1,24 @@
 import "./JordanLista.css";
 import JordanItem from "components/JordanItem/JordanItem";
 import React, { useState, useEffect, useCallback } from "react";
-import {JordanService} from 'services/JordanService'
+import { JordanService } from "services/JordanService";
 import JordanDetalhesModal from "components/JordanDetalhesModal/JordanDetalhesModal";
 
 import { ActionMode } from "constants/index";
 
-function JordanLista({jordanCriado, mode, updateJordan, deleteJordan, jordanEditado, jordanRemovido}) {
-
-  const [jordans, setJordans] = useState([])
+function JordanLista({
+  jordanCriado,
+  mode,
+  updateJordan,
+  deleteJordan,
+  jordanEditado,
+  jordanRemovido,
+}) {
+  const [jordans, setJordans] = useState([]);
 
   const [jordanSelecionado, setJordanSelecionado] = useState([]);
 
-  const[jordanModal, setJordanModal] = useState(false)
+  const [jordanModal, setJordanModal] = useState(false);
 
   const adicionarItem = (jordanIndex) => {
     const jordan = {
@@ -30,8 +36,8 @@ function JordanLista({jordanCriado, mode, updateJordan, deleteJordan, jordanEdit
 
   const getLista = async () => {
     const response = await JordanService.getLista();
-    setJordans(response); 
-  }
+    setJordans(response);
+  };
 
   const getJordanById = async (jordanId) => {
     const response = await JordanService.getById(jordanId);
@@ -42,25 +48,28 @@ function JordanLista({jordanCriado, mode, updateJordan, deleteJordan, jordanEdit
     };
 
     mapper[mode]();
-  }
+  };
 
-  const adicionaJordanNaLista = useCallback((jordan) => {
-    const lista = [...jordans, jordan];
-    setJordans(lista);
-},
-[jordans]
-);
+  const adicionaJordanNaLista = useCallback(
+    (jordan) => {
+      const lista = [...jordans, jordan];
+      setJordans(lista);
+    },
+    [jordans]
+  );
 
-useEffect(() => {
-  if (
-    jordanCriado &&
-    !jordans.map(({ id }) => id).includes(jordanCriado.id)
-  ) {
-    adicionaJordanNaLista(jordanCriado);
-  }
-}, [adicionaJordanNaLista, jordanCriado, jordans]);
+  useEffect(() => {
+    if (
+      jordanCriado &&
+      !jordans.map(({ id }) => id).includes(jordanCriado.id)
+    ) {
+      adicionaJordanNaLista(jordanCriado);
+    }
+  }, [adicionaJordanNaLista, jordanCriado, jordans]);
 
-  useEffect(()=>{getLista()}, [jordanEditado, jordanRemovido])
+  useEffect(() => {
+    getLista();
+  }, [jordanEditado, jordanRemovido]);
 
   return (
     <div className="JordanLista">
@@ -76,8 +85,13 @@ useEffect(() => {
           clickItem={(jordanId) => getJordanById(jordanId)}
         />
       ))}
-      
-      {jordanModal && <JordanDetalhesModal jordan = {jordanModal} closeModal={() => setJordanModal(false)}/>}
+
+      {jordanModal && (
+        <JordanDetalhesModal
+          jordan={jordanModal}
+          closeModal={() => setJordanModal(false)}
+        />
+      )}
     </div>
   );
 }

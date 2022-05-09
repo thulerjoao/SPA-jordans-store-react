@@ -1,29 +1,26 @@
-import './DeletaJordanModal.css'
+import "./DeletaJordanModal.css";
 import Modal from "components/Modal/Modal";
 import { JordanService } from "services/JordanService";
 
-function DeletaJordanModal({ closeModal, jordanParaDeletar, onDeleteJordan }){
-    const handleDelete = async (jordan) => {
-        await JordanService.deleteById(jordan.id);
-        onDeleteJordan(jordan);
-        closeModal();
-      }
-    return(
-        <Modal closeModal={closeModal}>
+function DeletaJordanModal({ closeModal, jordanParaDeletar, onDeleteJordan }) {
+  const handleDelete = async (jordan) => {
+    await JordanService.deleteById(jordan.id);
+    onDeleteJordan(jordan);
+    closeModal();
+  };
+  return (
+    <Modal closeModal={closeModal}>
       <div className="DeletaJordanModal">
         <h2>Confirmação</h2>
-        <p>
-          Deseja excluir o seguinte Jordan permanentemente?
-        </p>
-        <div className='DeletaJordanModal__fotoModelo'>
+        <p>Deseja excluir o seguinte Jordan permanentemente?</p>
+        <div className="DeletaJordanModal__fotoModelo">
           <img
-          className="DeletaJordanModal__foto"
-          src={jordanParaDeletar.foto}
-          alt={jordanParaDeletar.modelo}
-        />
-        <p>{jordanParaDeletar.modelo}</p>  
+            className="DeletaJordanModal__foto"
+            src={jordanParaDeletar.foto}
+            alt={jordanParaDeletar.modelo}
+          />
+          <p>{jordanParaDeletar.modelo}</p>
         </div>
-        
 
         <br />
 
@@ -42,8 +39,7 @@ function DeletaJordanModal({ closeModal, jordanParaDeletar, onDeleteJordan }){
         </div>
       </div>
     </Modal>
-
-    )
+  );
 }
 
-export default DeletaJordanModal
+export default DeletaJordanModal;

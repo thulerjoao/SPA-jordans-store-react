@@ -1,61 +1,61 @@
 .JordanDetalhesModal {
-    font-family: "Exo";
-    background: rgb(255, 255, 255);
-    border-radius: 6px;
-    padding: 10px 10px 10px 10px;
-    box-sizing: border-box;
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-  }
-  
-  .JordanDetalhesModal > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .JordanDetalhesModal__modelo {
-    font-size: 2em;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: .3em;
-    padding: .3em 0;
-  }
-  
-  .JordanDetalhesModal__descricao {
-    font-size: 1.2em;
-    margin-bottom: .8em;
-    font-weight: 500;
-  }
-  
-  .JordanDetalhesModal__preco {
-    color: darkviolet;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin: .3em ;
-  }
+  font-family: "Exo";
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
 
-  .JordanDetalhesModal__freteGratis{
-    color: rgb(26, 214, 1);
-    font-size: 1.4s;
-    font-weight: 500;
-    margin-left: .5em;
-  }
-  
-  .image{
-    display: flex;
-    justify-content: center;
-    border-bottom: solid black 2px;
-  }
+.JordanDetalhesModal > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
-  .JordanDetalhesModal__foto {
-    max-width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.JordanDetalhesModal__modelo {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.3em;
+  padding: 0.3em 0;
+}
+
+.JordanDetalhesModal__descricao {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+  font-weight: 500;
+}
+
+.JordanDetalhesModal__preco {
+  color: darkviolet;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.3em;
+}
+
+.JordanDetalhesModal__freteGratis {
+  color: rgb(26, 214, 1);
+  font-size: 1.4s;
+  font-weight: 500;
+  margin-left: 0.5em;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid black 2px;
+}
+
+.JordanDetalhesModal__foto {
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*   
   @media (max-width: 400px) {

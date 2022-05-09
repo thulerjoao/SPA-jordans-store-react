@@ -1,8 +1,8 @@
 import "./Navbar.css";
 import { ActionMode } from "constants/index";
-import lixeira from "assets/img/trash3.svg" 
+import lixeira from "assets/img/trash3.svg";
 
-function Navbar({createJordan, updateJordan, mode, deleteJordan}) {
+function Navbar({ createJordan, updateJordan, mode, deleteJordan }) {
   return (
     <header>
       <div className="NavBar__container">
@@ -14,21 +14,35 @@ function Navbar({createJordan, updateJordan, mode, deleteJordan}) {
         <a href="#" className="NavBar__container--home">
           Home
         </a>
-        <button type="button" className="Opcoes_jordan jordan" onClick={() => createJordan() }>
-          Cadastrar 
-        </button>
-        <button type="button" 
-                className={`Opcoes__Jordan Jordan ${mode === ActionMode.ATUALIZAR && "Jordan--ativo" }`}
-                onClick={() => updateJordan() }>
-          Editar 
+        <button
+          type="button"
+          className="Opcoes_jordan jordan"
+          onClick={() => createJordan()}
+        >
+          Cadastrar
         </button>
         <button
           type="button"
-          className={`Opcoes__jordan Jordan ${mode === ActionMode.DELETAR && 'Jordan--deletar'}`}
-          onClick={() => deleteJordan()}>
-
-          <img src={lixeira} width="20px" className="Jordan__lixeira" alt="Deletar jordan" />
-
+          className={`Opcoes__Jordan Jordan ${
+            mode === ActionMode.ATUALIZAR && "Jordan--ativo"
+          }`}
+          onClick={() => updateJordan()}
+        >
+          Editar
+        </button>
+        <button
+          type="button"
+          className={`Opcoes__jordan Jordan ${
+            mode === ActionMode.DELETAR && "Jordan--deletar"
+          }`}
+          onClick={() => deleteJordan()}
+        >
+          <img
+            src={lixeira}
+            width="20px"
+            className="Jordan__lixeira"
+            alt="Deletar jordan"
+          />
         </button>
         <div className="Carrinho__container">
           <svg
