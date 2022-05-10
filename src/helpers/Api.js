@@ -8,6 +8,6 @@ const JordanContext = {
 };
 
 export const Api = {
-  baseUrl: process.env.REACT_APP_API_URL,
+  baseUrl: "https://api-jordanstore-blue.onrender.com",
   ...JordanContext,
 };
